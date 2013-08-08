@@ -41,8 +41,18 @@ MySQL 和 es 的数据结构对照
 
 访问 http://localhost:9527/search/iphone 进行搜索
 
+如果需要对 Mysql 数据进行索引，可以使用 elasticsearch-river-jdbc 这个插件
+
+无需程序中进行索引，创建 river 后，这个插件会自动每 60s 索引新数据，只需搜索即可，详见
+
+https://github.com/jprante/elasticsearch-river-jdbc/wiki/Quickstart
+
 REFs:
 
 [中文文档](http://es-cn.medcl.net/)
 
 [ElasticSearch入门笔记](http://www.qwolf.com/?p=1387)
+
+[plugins](http://www.elasticsearch.org/guide/reference/modules/plugins/)
+
+[river-jdbc](https://github.com/jprante/elasticsearch-river-jdbc)
